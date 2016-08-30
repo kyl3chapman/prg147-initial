@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="background-color:blue;color:yellow;padding:20px;">
+    <h2>Time</h2>
+
+    <button onclick="document.getElementById('time').innerHTML=Date()">date&time</button>
+
+    <p id="time"></p>
+    </div>
+
+
+
+
+<div id="box">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <script type="text/javascript">
+        function changeColor(color){
+            var div = document.getElementById('box');
+            div.style.backgroundColor = color;
+        }
+    </script>
+    </head>
+
+    <body onload="changeColor('pink')">
+
+
+
+    <a href="#" onclick="changeColor('yellow')">Color</a>|
+
+</div>
+
+
+
+
+<div style="background-color:deeppink;color:black;padding:20px;" id="one">
+    <h2>One</h2>
+    <button type="button" class="w3-btn-floating w3-teal" onclick="document.getElementById('one').style.display='none';
+    document.getElementById('one-open').style.display='block';">-
+    </button>
+</div>
+<div class="w3-panel">
+    <button type="button" id="one-open" class="w3-btn-floating w3-teal" style="display:none;" onclick="document.getElementById('one').style.display='block'">+
+    </button>
+
+</div>
+
+
+</body>
+</html>
